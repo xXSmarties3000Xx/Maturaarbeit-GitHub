@@ -17,3 +17,21 @@ header {
 .container-fluid {
   font-size: 20px;
 }
+
+.inputfield {
+  position: relative;
+  left: 750px;
+  top: 300px;
+}
+
+.animation {
+  position: relative;
+  left: 10px;
+  top: 50px;
+}
+
+.instructions {
+  position: relative;
+  left: 600px;
+  top: 200px;
+}

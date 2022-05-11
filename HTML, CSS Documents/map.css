@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(124, 135, 230);
+  height: 100px;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+}
+
+.container-fluid {
+  font-size: 20px;
+}
+
+.body {
+  left: 50px;
+}
