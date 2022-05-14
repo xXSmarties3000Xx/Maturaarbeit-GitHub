@@ -62,27 +62,14 @@
         <div class="position-absolute top-50 start-50 translate-middle">
             <form id="form" action="spielfeldauswahl.html" method="get">
                 <div>
-                  <input id="name" autofocus name="name" placeholder="Dein Name" type="text">
+                  <input id="name" autofocus name="name" placeholder="Dein Name" type="text" required>
                 </div>
               <button id="myButton" class="btn btn-outline-primary btn-sm">Senden</button>    
             </form>
         </div>
 
-          
-        
-            
-       
-          
-      
-        
 
-          <script>
-
-            document.getElementById("myButton").onclick = function () {
-                    location.href = "spielfeldauswahl.html";
-                };
-
-          </script>
+         
         
 
 
@@ -94,7 +81,19 @@
       </body>
       
          
-  
+   <script>
+
+            document.getElementById("myButton").onclick = function () {
+                    location.href = "spielfeldauswahl.html";
+                };
+
+                const name = document.getElementById('name')
+                form.addEventListener('submit', (e) => {
+            let messages = []
+            if (name.value === '' || name.value == null) {
+              messages.push('Name is required')
+            }
+    </script>
      
        
 
