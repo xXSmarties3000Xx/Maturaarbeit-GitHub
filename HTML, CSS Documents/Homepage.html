@@ -59,17 +59,36 @@
         </div>
         
 
-
-        <div class="inputfield">
-          <section>
-            <form action="" method="get">
-            <input  autofocus name="q" placeholder="Dein Name" type="text">
-            <input type="submit">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <form id="form" action="spielfeldauswahl.html" method="get">
+                <div>
+                  <input id="name" autofocus name="name" placeholder="Dein Name" type="text">
+                </div>
+              <button id="myButton" class="btn btn-outline-primary btn-sm">Senden</button>    
             </form>
-          </section>
         </div>
+
+          
+        
+            
+       
+          
+      
+        
+
+          <script>
+
+            document.getElementById("myButton").onclick = function () {
+                    location.href = "spielfeldauswahl.html";
+                };
+
+          </script>
+        
+
+
+
         <div class="animation">
-            <img src="/HTML, CSS Documents/images/bullsanimation.gif"  alt="Video of Michael Jordan">
+          <img src="/HTML, CSS Documents/images/bullsanimation.gif" width = "350" height = "350" alt="Video of Michael Jordan">
         </div>
       
       </body>
