@@ -1,3 +1,12 @@
 table {
   position: relative;
 }
+
+.greeting {
+  padding: 30px 30px 20px;
+  color: blue;
+}
+
+.question {
+  padding: 30px 30px 20px 40px;
+}
