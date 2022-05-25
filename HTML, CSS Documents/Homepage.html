@@ -51,6 +51,7 @@
       </header>
 
       <body>
+        <div class="background">
         <div class="instructions">
           <h1>Wilkommen bei B-Ball Connect</h1>
           <p>
@@ -59,14 +60,17 @@
         </div>
         
 
-        <div class="position-absolute top-50 start-50 translate-middle">
+        
             <form id="form" action="spielfeldauswahl.html" method="get">
-                <div>
-                  <input id="name" autofocus name="name" placeholder="Dein Name" type="text" required>
+                <div class="inputfield">
+                  <input id="name" autofocus name="name" placeholder="Dein Name" type="text" aria-label=".form-control-lg example" required>
                 </div>
-              <button id="myButton" class="btn btn-outline-primary btn-sm">Senden</button>    
+                <div class="submitbutton">
+                  <button id="myButton" class="btn btn-outline-primary btn-sm">Senden</button>
+                </div>
+                  
             </form>
-        </div>
+        
 
 
          
@@ -74,8 +78,8 @@
 
 
 
-        <div class="animation">
-          <img src="/HTML, CSS Documents/images/bullsanimation.gif" width = "350" height = "350" alt="Video of Michael Jordan">
+        <div class="image">
+          <iframe src="/HTML, CSS Documents/images/giphy.gif" width="720" height="405" frameBorder="0" allowFullScreen></iframe>
         </div>
       
       </body>
