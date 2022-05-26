@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,54 +13,149 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <script>
-      document.querySelector("form").addEventListener("submit", function (e) {
-        let name = document.querySelector("#name").value;
-        print("Hallo, " + name);
-        e.preventDefault();
-      });
-    </script>
   </head>
+
   <body>
-    <div class="greeting">
-      <h1>Hallo, + "Name"</h1>
+    
+    <div class="leftsidebar">
+      </div>
+      
+      <div class="rightsidebar">
+      </div>
+      
+    <header>
+      <div class="logo">
+        <p>B-Ball Connect</p>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <div class="weisserbalken"
+      ><div class="greeting">
+          <p>Hallo, + "Name"</p>
+        </div>
+      
+      <div class="question">
+        <p>Auf welchem Feld möchtest du spielen?</p>
+      </div>
+    </div>
+        
+      
+    
+
+      <section>
+        
+      <div class="topcosmetic">
+      </div>
+
+              <div class="Spielfeld1">
+                    
+                <div class="Titel1">
+                Kantonsschule Baden:
+                </div>
+
+                <div class="Bild1">
+                  <img src="/HTML, CSS Documents/images/Example.jpg" alt="none" width="100%" height="100%">
+                </div>
+                <div class="btn-container">
+                  <button class="Button1" onclick="spielfeld1()">Auswählen
+                </div>
+               
+              </div>
+
+              <div class="topcosmetic2">
+              </div>   
+
+              <div class="Spielfeld2">
+                    
+                <div class="Titel2">
+                Kantonsschule Baden:
+                </div>
+
+                <div class="Bild2">
+                  <img src="/HTML, CSS Documents/images/Example.jpg" alt="none" width="100%" height="100%">
+                </div>
+                <div class="btn-container">
+                  <button class="Button2" onclick="spielfeld1()">Auswählen
+                </div>
+               
+              </div>
+
+              <div class="topcosmetic3">
+              </div>   
+
+              <div class="Spielfeld3">
+                    
+                <div class="Titel3">
+                Kantonsschule Baden:
+                </div>
+
+                <div class="Bild3">
+                  <img src="/HTML, CSS Documents/images/Example.jpg" alt="none" width="100%" height="100%">
+                </div>
+                <div class="btn-container">
+                  <button class="Button3" onclick="spielfeld1()">Auswählen
+                </div>
+               
+              </div>
+
+              <div class="topcosmetic4">
+              </div>
+
+              <div class="Spielfeld4">
+                    
+                <div class="Titel4">
+                Kantonsschule Baden:
+                </div>
+
+                <div class="Bild4">
+                  <img src="/HTML, CSS Documents/images/Example.jpg" alt="none" width="100%" height="100%">
+                </div>
+                <div class="btn-container">
+                  <button class="Button4" onclick="spielfeld1()">Auswählen
+                </div>
+               
+              </div>
+
+              <div class="topcosmetic5">
+              </div>
+
+              <div class="Spielfeld5">
+                    
+                <div class="Titel5">
+                Kantonsschule Baden:
+                </div>
+
+                <div class="Bild5">
+                  <img src="/HTML, CSS Documents/images/Example.jpg" alt="none" width="100%" height="100%">
+                </div>
+                <div class="btn-container">
+                  <button class="Button5" onclick="spielfeld1()">Auswählen
+                </div>
+               
+              </div>
+
+              <div class="topcosmetic6">
+              </div>
+
+
+
+
+
+
+
     </div>
 
-    <h2>Auf welchem Feld möchtest du spielen?</h2>
+  <footer>
+      © May 2022 By Nico and Emanuel
+  </footer>
 
-    <table class="table table-sucess">
-      <thead>
-        <th scope="col">Spielfeld</th>
-        <th scope="col">Standort</th>
-      </thead>
-
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td><a href="spielfeld.html">Kantonsschule Baden</a></td>
-        </tr>
-
-        <tr>
-          <th scope="row">2</th>
-          <td><a href="spielfeld.html">Sportanlage Esp, Dättwil</a></td>
-        </tr>
-
-        <tr>
-          <th scope="row">3</th>
-          <td><a href="spielfeld.html">Kantonsschule Wettingen</a></td>
-        </tr>
-
-        <tr>
-          <th scope="row">4</th>
-          <td><a href="spielfeld.html">Schulhaus Burghalde</a></td>
-        </tr>
-
-        <tr>
-          <th scope="row">5</th>
-          <td><a href="spielfeld.html">Bezirksschule Untersiggenthal</a></td>
-        </tr>
-      </tbody>
-    </table>
+    <script>
+      function spielfeld1() {
+        location.href = "spielfeld.html";
+      }
+      </script>
   </body>
+
+  
 </html>
