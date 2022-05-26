@@ -299,7 +299,7 @@ section {
   width: 100%;
   text-align: center;
   top: 10px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: brandon-grot-w01-light, Century Gothic, arial, sans-serif;
 }
 
@@ -349,4 +349,23 @@ footer {
   text-align: center;
   color: white;
   line-height: 3em;
+}
+
+@media only screen and (min-width: 768px) {
+  .leftsidebar {
+    position: absolute;
+    top: 160px;
+    width: 10%;
+    height: 1660px;
+    background-color: #dfe1fa;
+  }
+
+  .rightsidebar {
+    position: absolute;
+    width: 10%;
+    top: 160px;
+    height: 1660px;
+    background-color: #dfe1fa;
+    left: 90%;
+  }
 }
