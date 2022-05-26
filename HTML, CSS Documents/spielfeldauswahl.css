@@ -54,7 +54,7 @@ section {
   position: absolute;
   top: 160px;
   width: 10%;
-  height: 300%;
+  height: 1660px;
   background-color: #dfe1fa;
 }
 
@@ -62,7 +62,7 @@ section {
   position: absolute;
   width: 10%;
   top: 160px;
-  height: 300%;
+  height: 1660px;
   background-color: #dfe1fa;
   left: 90%;
 }
@@ -341,7 +341,8 @@ section {
 }
 
 footer {
-  padding-bottom: 0px;
+  top: 550px;
+  position: relative;
   height: 50px;
   clear: both;
   background-color: rgba(57, 63, 68, 1);
