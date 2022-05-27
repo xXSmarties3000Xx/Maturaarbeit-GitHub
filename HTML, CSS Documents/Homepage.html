@@ -17,6 +17,7 @@
   </head>
   
   <body>
+
     <div class="wrapper">
       
       <header>
@@ -69,35 +70,39 @@
 
         <div class="inputs">
           <form id="form" action="spielfeldauswahl.html" method="get">
-              <div class="mb-3">
+              <div class="namensschild">
                 <input autofocus id="name" name="name" type="text" class="form-control" placeholder="Dein Name" aria-label=".form-control-lg example" required>
               </div>
+            
               
               <div id="playingtime" class="form-text">Wie lange planst du ungefähr zu spielen?</div>
               
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="30mins">
+        <div class="kästchen">
+                <div class="mb-3 form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label" for="30mins">30 minuten</label>
-              </div>
+                </div>
 
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="1h">
-                <label class="form-check-label" for="1h">1 Stunde</label>
-              </div>
+                <div class="mb-3 form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="1h">1 Stunde</label>
+                </div>
 
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="1.5h">
-                <label class="form-check-label" for="1.5h">1.5 Stunden</label>
-              </div>
+                <div class="mb-3 form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                  <label class="form-check-label" for="1.5h">1.5 Stunden</label>
+                </div>
 
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="2h">
-                <label class="form-check-label" for="2h">2 Stunden</label>
-              </div>
+                <div class="mb-3 form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                  <label class="form-check-label" for="2h">2 Stunden</label>
+                </div>
               
-              <div class="submitbutton">
-                <button id="myButton" type="submit" class="btn btn-primary">Senden</button>
-              </div>
+                <div class="submitbutton">
+                  <button id="myButton" type="submit" class="btn btn-primary">Senden</button>
+                </div>
+        </div>
+              
             </form>
           </div>
             
@@ -110,35 +115,40 @@
 
 
         <div class="image">
-          <iframe class="img-responsive" src="/HTML, CSS Documents/images/giphy.gif" width="720" height="405" style="width:100% frameBorder="0" allowFullScreen></iframe>
+          
         </div>
+        
+        <footer>
+        © May 2022 By Nico and Emanuel
+        </footer>
+
     </div>
-      
-      
+     
   </body>
       
          
   <script>
 
-            document.getElementById("myButton").onclick = function () {
+          document.getElementById("myButton").onclick = function () {
                     location.href = "spielfeldauswahl.html";
                 };
 
                 const name = document.getElementById('name')
-                form.addEventListener('submit', (e) => {
+                form.addEventListener('submit', (e)) => {
             let messages = []
-            if (name.value === '' || name.value == null) {
-              messages.push('Name is required') } 
+            if (name.value === '' || name.value == null) 
+              messages.push('Name is required')
             }
+                
+
   </script>
      
        
 
-      <footer>
-        © May 2022 By Nico and Emanuel
-      </footer>
+     
     
       
     
   </body>
 </html>
+                
