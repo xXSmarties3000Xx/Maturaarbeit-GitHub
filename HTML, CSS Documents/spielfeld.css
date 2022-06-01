@@ -13,3 +13,7 @@ header {
   text-align: center;
   font-size: 35px;
 }
+
+.container-fluid {
+  font-size: 20px;
+}
