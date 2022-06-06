@@ -85,6 +85,9 @@ footer {
   }
 
   footer {
-    top: 350px;
+    top: 460px;
+  }
+  .inputs {
+    margin-left: 35px;
   }
 }

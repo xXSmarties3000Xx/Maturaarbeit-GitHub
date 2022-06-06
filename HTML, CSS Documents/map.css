@@ -126,6 +126,11 @@ th {
   font-size: small;
 }
 
+.links {
+  text-decoration: none;
+  margin-left: 5px;
+}
+
 @media only screen and (min-width: 768px) {
   .karte {
     width: 50%;
@@ -138,5 +143,23 @@ th {
   .headtitle {
     font-size: 30px;
     top: 15%;
+  }
+
+  .listdescription {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    background-color: white;
+    font-size: large;
+  }
+
+  table {
+    position: absolute;
+    max-width: 50%;
+    top: 30%;
+  }
+  th {
+    font-size: medium;
   }
 }
