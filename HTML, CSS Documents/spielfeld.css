@@ -4,16 +4,114 @@
 }
 
 header {
-  background-color: rgb(124, 135, 230);
-  height: 120px;
+  position: relative;
+}
+
+.container-fluid {
+  font-size: 20px;
 }
 
 .logo {
   position: relative;
   text-align: center;
   font-size: 35px;
+  background-color: rgb(124, 135, 230);
+  height: 60px;
 }
 
-.container-fluid {
+.title {
+  text-align: center;
+  margin-top: 20px;
   font-size: 20px;
+}
+
+.spielerliste {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #dfe1fa;
+  padding: 20px;
+}
+
+.spielerliste li {
+  background: white;
+  color: darkblue;
+  margin: 5px;
+}
+
+.image {
+  top: 220px;
+  left: 880px;
+  position: absolute;
+  display: none;
+}
+
+.Button1 {
+  position: relative;
+  left: 50%;
+  margin-top: 10%;
+  transform: translate(-50%);
+}
+
+.Button2 {
+  position: relative;
+  top: 60px;
+  transform: translate(-50%);
+}
+
+.Button1,
+.Button2 {
+  background-color: rgb(124, 135, 230);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px blue;
+  padding: 10px;
+  min-height: 30px;
+  min-width: 100px;
+}
+
+.Button1:hover,
+.Button2:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
+footer {
+  position: relative;
+  top: 80px;
+  height: 50px;
+  clear: both;
+  background-color: rgba(57, 63, 68, 1);
+  text-align: center;
+  color: white;
+  line-height: 3em;
+}
+
+@media only screen and (min-width: 768px) {
+  .image {
+    display: block;
+  }
+  .title {
+    font-size: 25px;
+  }
+
+  .spielerliste {
+    margin-left: 5%;
+    margin-right: 60%;
+    margin-top: 5%;
+  }
+
+  .Button1 {
+    margin-left: -760px;
+    margin-top: 5%;
+  }
+  .Button2 {
+    position: relative;
+    left: 1250px;
+    top: 0px;
+  }
+
+  footer {
+    top: 264px;
+  }
 }

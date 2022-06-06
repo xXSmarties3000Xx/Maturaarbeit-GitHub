@@ -69,9 +69,12 @@ footer {
 }
 
 .image {
-  position: relative;
+  top: 170px;
+  left: 885px;
+  position: absolute;
   display: none;
 }
+
 .submitbutton {
   position: relative;
 }
@@ -79,5 +82,9 @@ footer {
 @media only screen and (min-width: 768px) {
   .image {
     display: block;
+  }
+
+  footer {
+    top: 350px;
   }
 }

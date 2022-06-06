@@ -74,7 +74,6 @@ header {
   width: 100%;
   text-align: center;
   top: 10px;
-  font-size: 25px;
   font-family: brandon-grot-w01-light, Century Gothic, arial, sans-serif;
 }
 
@@ -129,7 +128,6 @@ header {
   width: 100%;
   text-align: center;
   top: 10px;
-  font-size: 25px;
   font-family: brandon-grot-w01-light, Century Gothic, arial, sans-serif;
 }
 
@@ -184,7 +182,6 @@ header {
   width: 100%;
   text-align: center;
   top: 10px;
-  font-size: 25px;
   font-family: brandon-grot-w01-light, Century Gothic, arial, sans-serif;
 }
 
@@ -239,7 +236,6 @@ header {
   width: 100%;
   text-align: center;
   top: 10px;
-  font-size: 20px;
   font-family: brandon-grot-w01-light, Century Gothic, arial, sans-serif;
 }
 
@@ -294,7 +290,6 @@ header {
   width: 100%;
   text-align: center;
   top: 10px;
-  font-size: 20px;
   font-family: brandon-grot-w01-light, Century Gothic, arial, sans-serif;
 }
 
@@ -335,6 +330,14 @@ header {
   background-color: #dfe1fa;
 }
 
+.Titel1,
+.Titel2,
+.Titel3,
+.Titel4,
+.Titel5 {
+  font-size: 20px;
+}
+
 footer {
   top: 550px;
   position: relative;
@@ -348,12 +351,28 @@ footer {
 
 @media only screen and (min-width: 768px) {
   #wrapper {
-    height: 115%;
+    height: 130%;
   }
 }
 
 @media only screen and (min-width: 1080px) {
   #wrapper {
-    height: 130%;
+    height: 180%;
+    max-width: 100%;
+  }
+  .Titel1,
+  .Titel2,
+  .Titel3,
+  .Titel4,
+  .Titel5 {
+    font-size: 30px;
+  }
+
+  .Button1,
+  .Button2,
+  .Button3,
+  .Button4,
+  .Button5 {
+    min-width: 130px;
   }
 }
