@@ -102,16 +102,16 @@ footer {
   }
 
   .Button1 {
-    margin-left: -760px;
-    margin-top: 5%;
+    left: 11%;
+    top: -75px;
   }
+
   .Button2 {
-    position: relative;
-    left: 1250px;
-    top: 0px;
+    left: 23%;
+    top: -75px;
   }
 
   footer {
-    top: 264px;
+    top: 10px;
   }
 }
