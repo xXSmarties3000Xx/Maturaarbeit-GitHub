@@ -351,14 +351,13 @@ footer {
 
 @media only screen and (min-width: 768px) {
   #wrapper {
-    height: 130%;
+    height: 115%;
   }
 }
 
 @media only screen and (min-width: 1080px) {
   #wrapper {
-    height: 180%;
-    max-width: 100%;
+    height: 150%;
   }
   .Titel1,
   .Titel2,
