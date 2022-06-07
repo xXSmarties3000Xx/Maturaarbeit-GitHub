@@ -160,4 +160,8 @@ th {
   th {
     font-size: medium;
   }
+
+  .wrapper {
+    height: 80%;
+  }
 }
