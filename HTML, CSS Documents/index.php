@@ -65,7 +65,7 @@
 
 
     <div class="inputs">
-      <form id="form" action="contact.php" method="POST">
+      <form id="form" action="spielfeldauswahl.php" method="POST">
         <div class="namensschild">
           <input autofocus id="name" name="name" type="text" class="form-control" placeholder="Dein Name" aria-label=".form-control-lg example" required>
         </div>
@@ -111,7 +111,7 @@
 
 
     <div class="image">
-      <img src="/HTML, CSS Documents/images/hoopblack.jpg" alt="Picture of a Basketballhoop" width="100%">
+      <img src="C:\xampp\htdocs\bballconnect\img\hoopblack.jpg" alt="Picture of a Basketballhoop" width="100%">
     </div>
 
     <footer>
@@ -125,7 +125,7 @@
 
 <script>
   document.getElementById("myButton").onclick = function() {
-    location.href = "spielfeldauswahl.html";
+    location.href = "spielfeldauswahl.php";
   };
 
   const name = document.getElementById('name')
