@@ -24,7 +24,8 @@
   $name = $_POST['name'];
   $playingtime = $_POST['playingtime'];
 
-  $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`) VALUES ('0', '$name', '$playingtime')";
+
+  $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`, `place`) VALUES ('0', '$name', '$playingtime', '$place')";
   $rs = mysqli_query($conn, $sql);
   ?>
 
@@ -100,7 +101,7 @@
       </div>
       <form action="spielfeld2.php" method="POST">
         <div class="btn-container">
-          <button class="Button2">Auswählen
+          <button name="place" value="Dättwil" class="Button2">Auswählen
         </div>
       </form>
 
@@ -120,7 +121,7 @@
       </div>
       <form action="spielfeld3.php" method="POST">
         <div class="btn-container">
-          <button class="Button3">Auswählen
+          <button name="place" value="Nussbaumen" class="Button3">Auswählen
         </div>
       </form>
 
@@ -140,7 +141,7 @@
       </div>
       <form action="spielfeld4.php" method="POST">
         <div class="btn-container">
-          <button class="Button4">Auswählen
+          <button name="place" value="Wettingen" class="Button4">Auswählen
         </div>
       </form>
 
@@ -156,11 +157,11 @@
       </div>
 
       <div class="Bild5">
-        <img src="/HTML, CSS Documents/images/Example.jpg" alt="none" width="100%" height="100%">
+        <img src="file:///C:/xampp/htdocs/bballconnect/Maturaarbeit-GitHub/img/burghalde.jpeg" alt="none" width="100%" height="100%">
       </div>
       <form action="spielfeld5.php" method="POST">
         <div class="btn-container">
-          <button class="Button5">Auswählen
+          <button name="place" value="Burghalde" class="Button5">Auswählen
         </div>
       </form>
 

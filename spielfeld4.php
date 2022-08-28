@@ -20,7 +20,13 @@
 <div class="wrapper">
 
   <body>
+    <?php
+    include_once 'additional/connect.php';
+    $place = $_POST['place'];
 
+    $sql = "INSERT INTO `users` (`place`) VALUES ('$place')";
+    $rs = mysqli_query($conn, $sql);
+    ?>
     <header>
 
       <nav class="navbar navbar-expand-sm navbar-light bg-light">

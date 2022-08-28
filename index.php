@@ -113,7 +113,7 @@
 
 
     <div class="image">
-      <img src="/img/hoop.jpg" alt="Warum?">
+      <img src="/img/hoop.jpg" alt="Something went wrong with the picture">
     </div>
 
     <footer>
