@@ -25,7 +25,7 @@
   $playingtime = $_POST['playingtime'];
 
 
-  $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`, `place`) VALUES ('0', '$name', '$playingtime', '$place')";
+  $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`, `place`) VALUES ('0', '$name', '$playingtime', 'null')";
   $rs = mysqli_query($conn, $sql);
   ?>
 
