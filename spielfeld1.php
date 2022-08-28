@@ -25,11 +25,13 @@
     include_once 'additional/connect.php';
     $place = $_POST['place'];
 
+
+
     $sql = "UPDATE users
     SET 
         place = '$place'
     WHERE
-        id = 66;";
+        place = 'null';";
     $rs = mysqli_query($conn, $sql);
     ?>
     <header>
@@ -83,7 +85,7 @@
         <?php
         include_once 'additional/connect.php';
 
-        $sql = "SELECT * FROM users WHERE place='';";
+        $sql = "SELECT * FROM users WHERE place='Baden';";
         $rs = mysqli_query($conn, $sql);
         $rsCheck = mysqli_num_rows($rs);
 
