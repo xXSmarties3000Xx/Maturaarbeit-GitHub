@@ -20,12 +20,12 @@
 
 <body>
   <?php
-  $con = mysqli_connect('localhost', 'root', '', 'test1');
+  include_once 'additional/connect.php';
   $name = $_POST['name'];
   $playingtime = $_POST['playingtime'];
 
   $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`) VALUES ('0', '$name', '$playingtime')";
-  $rs = mysqli_query($con, $sql);
+  $rs = mysqli_query($conn, $sql);
   ?>
 
   <div id="wrapper">
@@ -77,9 +77,12 @@
       <div class="Bild1">
         <img src="/HTML, CSS Documents/images/Baden.jpeg" alt="none" width="100%" height="100%">
       </div>
-      <div class="btn-container">
-        <button class="Button1" onclick="spielfeld1()">Auswählen
-      </div>
+      <form action="spielfeld1.php" method="POST">
+        <div class="btn-container">
+          <button name="place" value="Baden" class="Button1">Auswählen
+        </div>
+      </form>
+
 
     </div>
 
@@ -95,9 +98,11 @@
       <div class="Bild2">
         <img src="/HTML, CSS Documents/images/Dättwil.jpeg" alt="none" width="100%" height="100%">
       </div>
-      <div class="btn-container">
-        <button class="Button2" onclick="spielfeld2()">Auswählen
-      </div>
+      <form action="spielfeld2.php" method="POST">
+        <div class="btn-container">
+          <button class="Button2">Auswählen
+        </div>
+      </form>
 
     </div>
 
@@ -113,9 +118,11 @@
       <div class="Bild3">
         <img src="/HTML, CSS Documents/images/Nussbaumen.jpeg" alt="none" width="100%" height="100%">
       </div>
-      <div class="btn-container">
-        <button class="Button3" onclick="spielfeld3()">Auswählen
-      </div>
+      <form action="spielfeld3.php" method="POST">
+        <div class="btn-container">
+          <button class="Button3">Auswählen
+        </div>
+      </form>
 
     </div>
 
@@ -131,9 +138,11 @@
       <div class="Bild4">
         <img src="/HTML, CSS Documents/images/KantiWettingen.jpeg" alt="none" width="100%" height="100%">
       </div>
-      <div class="btn-container">
-        <button class="Button4" onclick="spielfeld4()">Auswählen
-      </div>
+      <form action="spielfeld4.php" method="POST">
+        <div class="btn-container">
+          <button class="Button4">Auswählen
+        </div>
+      </form>
 
     </div>
 
@@ -149,9 +158,11 @@
       <div class="Bild5">
         <img src="/HTML, CSS Documents/images/Example.jpg" alt="none" width="100%" height="100%">
       </div>
-      <div class="btn-container">
-        <button class="Button5" onclick="spielfeld5()">Auswählen
-      </div>
+      <form action="spielfeld5.php" method="POST">
+        <div class="btn-container">
+          <button class="Button5">Auswählen
+        </div>
+      </form>
 
     </div>
 
@@ -178,27 +189,21 @@
 
   </div>
 
-  <script>
-    function spielfeld1() {
-      location.href = "spielfeld1.html";
-    }
+  <?php
+  include_once 'additional/connect.php';
 
-    function spielfeld2() {
-      location.href = "spielfeld2.html";
-    }
+  $sql = "SELECT * FROM users WHERE place='';";
+  $rs = mysqli_query($conn, $sql);
+  $rsCheck = mysqli_num_rows($rs);
 
-    function spielfeld3() {
-      location.href = "spielfeld3.html";
+  if ($rsCheck > 0) {
+    while ($row = mysqli_fetch_assoc($rs)) {
+      echo $row['name'] . "<br>";
     }
+  }
 
-    function spielfeld4() {
-      location.href = "spielfeld4.html";
-    }
+  ?>
 
-    function spielfeld5() {
-      location.href = "spielfeld5.html";
-    }
-  </script>
 </body>
 
 

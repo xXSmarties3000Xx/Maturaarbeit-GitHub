@@ -16,7 +16,9 @@
 </head>
 
 <body>
-
+  <?php
+  include_once 'additional/connect.php';
+  ?>
   <div class="wrapper">
 
     <header>
@@ -32,11 +34,11 @@
             <ul class="navbar-nav">
 
               <li class="nav-item">
-                <a class="nav-link" href="Homepage.html">Login</a>
+                <a class="nav-link" href="index.php">Login</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="map.html">Karte</a>
+                <a class="nav-link" aria-current="page" href="map.php">Karte</a>
               </li>
 
               <li class="nav-item">
@@ -111,7 +113,7 @@
 
 
     <div class="image">
-      <img src="C:\xampp\htdocs\bballconnect\img\hoopblack.jpg" alt="Picture of a Basketballhoop" width="100%">
+      <img src="/img/hoop.jpg" alt="Warum?">
     </div>
 
     <footer>
