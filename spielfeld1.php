@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 
 <link rel="stylesheet" href="spielfeld.css">
@@ -24,15 +29,15 @@
     <?php
     include_once 'additional/connect.php';
     $place = $_POST['place'];
-
-
+    $nameofplayer = $_SESSION['nameofplayer'];
 
     $sql = "UPDATE users
     SET 
         place = '$place'
     WHERE
-        place = 'null';";
+        name = '$nameofplayer';";
     $rs = mysqli_query($conn, $sql);
+
     ?>
     <header>
 
@@ -83,8 +88,6 @@
       <p>Anwesende Spieler:</p>
       <li>
         <?php
-        include_once 'additional/connect.php';
-
         $sql = "SELECT * FROM users WHERE place='Baden';";
         $rs = mysqli_query($conn, $sql);
         $rsCheck = mysqli_num_rows($rs);

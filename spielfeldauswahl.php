@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 
 <link rel="stylesheet" href="spielfeldauswahl.css" />
@@ -21,11 +25,14 @@
 <body>
   <?php
   include_once 'additional/connect.php';
+
   $name = $_POST['name'];
   $playingtime = $_POST['playingtime'];
+  $place = 'Null';
 
+  $_SESSION['nameofplayer'] = $name;
 
-  $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`, `place`) VALUES ('0', '$name', '$playingtime', 'null')";
+  $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`, `place`) VALUES ('0', '$name', '$playingtime', '$place')";
   $rs = mysqli_query($conn, $sql);
   ?>
 

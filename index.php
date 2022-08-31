@@ -16,9 +16,12 @@
 </head>
 
 <body>
+
   <?php
   include_once 'additional/connect.php';
   ?>
+
+
   <div class="wrapper">
 
     <header>
