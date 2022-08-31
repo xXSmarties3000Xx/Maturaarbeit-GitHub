@@ -90,27 +90,56 @@
         <th scope="col">Spielfeld</th>
         <th scope="col">Spieler Anwesend</th>
       </thead>
+      <?php
+      include_once 'additional/connect.php';
+
+      // count players on field Baden
+      $query = "SELECT id FROM users WHERE place='Baden';";
+      $query_run = mysqli_query($conn, $query);
+
+      $anzBaden = mysqli_num_rows($query_run);
+
+      $query = "SELECT id FROM users WHERE place='Nussbaumen';";
+      $query_run = mysqli_query($conn, $query);
+
+      $anzNussbaumen = mysqli_num_rows($query_run);
+
+      $query = "SELECT id FROM users WHERE place='Wettingen';";
+      $query_run = mysqli_query($conn, $query);
+
+      $anzWettingen = mysqli_num_rows($query_run);
+
+      $query = "SELECT id FROM users WHERE place='Burghalde';";
+      $query_run = mysqli_query($conn, $query);
+
+      $anzBurghalde = mysqli_num_rows($query_run);
+
+      $query = "SELECT id FROM users WHERE place='Dättwil';";
+      $query_run = mysqli_query($conn, $query);
+
+      $anzDättwil = mysqli_num_rows($query_run);
+      ?>
 
       <tbody>
         <tr class="nussbaumen">
           <th scope="row">1.<a class="links" href="/HTML, CSS Documents/spielfeld3.php">Sportanlage Nussbaumen</a></th>
-          <td class="anzahlspieler">0</td>
+          <td class="anzahlspieler"><?php echo $anzNussbaumen ?></td>
         </tr>
         <tr class="wettingen">
           <th scope="row">2.<a class="links" href="/HTML, CSS Documents/spielfeld4.php">Kantonsschule Wettingen</a></th>
-          <td class="anzahlspieler">0</td>
+          <td class="anzahlspieler"><?php echo $anzWettingen ?></td>
         </tr>
         <tr class="baden">
           <th scope="row">3.<a class="links" href="/HTML, CSS Documents/spielfeld1.php">Kantonsschule Baden</a></th>
-          <td class="anzahlspieler">0</td>
+          <td class="anzahlspieler"><?php echo $anzBaden ?></td>
         </tr>
         <tr class="burghalde">
           <th scope="row">4.<a class="links" href="/HTML, CSS Documents/spielfeld5.php">Schulhaus Burghalde</a></th>
-          <td class="anzahlspieler">0</td>
+          <td class="anzahlspieler"><?php echo $anzBurghalde ?></td>
         </tr>
         <tr class="dättwil">
           <th scope="row">5.<a class="links" href="/spielfeld2.php">Autobahnbrücke Dättwil</a></th>
-          <td class="anzahlspieler">0</td>
+          <td class="anzahlspieler"><?php echo $anzDättwil ?></td>
         </tr>
 
       </tbody>
