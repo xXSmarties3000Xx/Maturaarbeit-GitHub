@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 
 <link rel="stylesheet" href="index.css">
@@ -19,6 +23,7 @@
 
   <?php
   include_once 'additional/connect.php';
+  $_SESSION['visits'] = 0;
   ?>
 
 

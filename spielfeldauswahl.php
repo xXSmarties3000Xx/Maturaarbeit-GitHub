@@ -25,15 +25,24 @@ session_start();
 <body>
   <?php
   include_once 'additional/connect.php';
+  $visits = $_SESSION['visits'];
+  $visits += 1;
+  $_SESSION['visits'] = $visits;
+  $visitssession = $_SESSION['visits'];
+  echo "$visitssession";
 
-  $name = $_POST['name'];
-  $playingtime = $_POST['playingtime'];
-  $place = 'Null';
 
-  $_SESSION['nameofplayer'] = $name;
 
-  $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`, `place`) VALUES ('0', '$name', '$playingtime', '$place')";
-  $rs = mysqli_query($conn, $sql);
+
+  if ($visitssession == 1) {
+    $name = $_POST['name'];
+    $playingtime = $_POST['playingtime'];
+    $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`) VALUES ('0', '$name', '$playingtime')";
+    $rs = mysqli_query($conn, $sql);
+    $_SESSION['nameofplayer'] = $name;
+  }
+
+  $nameofplayer = $_SESSION['nameofplayer'];
   ?>
 
   <div id="wrapper">
@@ -55,9 +64,7 @@ session_start();
       <div class="greeting">
         <p>
           <?php
-          if ($rs) {
-            echo "Hallo $name";
-          }
+          echo "Hallo $nameofplayer";
           ?>
         </p>
       </div>
