@@ -36,8 +36,8 @@ session_start();
     WHERE
         name = '$nameofplayer';";
     $rs = mysqli_query($conn, $sql);
-
     ?>
+
     <header>
 
       <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -85,11 +85,26 @@ session_start();
 
     <ul class="spielerliste">
       <p>Anwesende Spieler:</p>
-      <li>Player 1</li>
-      <li>Player 2</li>
-      <li>Player 3</li>
-      <li>Player 5</li>
-      <li>...</li>
+      <?php
+      // display player on field
+      $sql = "SELECT * FROM users WHERE place='Dättwil';";
+      $rs = mysqli_query($conn, $sql);
+      $rsCheck = mysqli_num_rows($rs);
+
+      if ($rsCheck > 0) {
+        while ($row = mysqli_fetch_assoc($rs)) {
+          echo '<li> ' . $row['name'] . ' </li>';
+        }
+      }
+
+
+      // count players on field
+      $query = "SELECT id FROM users WHERE place='Dättwil';";
+      $query_run = mysqli_query($conn, $query);
+
+      $row2 = mysqli_num_rows($query_run);
+
+      ?>
     </ul>
 
     <div class="btn-container">
