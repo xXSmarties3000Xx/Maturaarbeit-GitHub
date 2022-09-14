@@ -122,23 +122,23 @@
 
       <tbody>
         <tr class="nussbaumen">
-          <th scope="row">1.<a class="links" href="/HTML, CSS Documents/spielfeld3.php">Sportanlage Nussbaumen</a></th>
+          <th scope="row">1.<a class="links" href="spielfeld3.php">Sportanlage Nussbaumen</a></th>
           <td class="anzahlspieler"><?php echo $anzNussbaumen ?></td>
         </tr>
         <tr class="wettingen">
-          <th scope="row">2.<a class="links" href="/HTML, CSS Documents/spielfeld4.php">Kantonsschule Wettingen</a></th>
+          <th scope="row">2.<a class="links" href="spielfeld4.php">Kantonsschule Wettingen</a></th>
           <td class="anzahlspieler"><?php echo $anzWettingen ?></td>
         </tr>
         <tr class="baden">
-          <th scope="row">3.<a class="links" href="/HTML, CSS Documents/spielfeld1.php">Kantonsschule Baden</a></th>
+          <th scope="row">3.<a class="links" href="spielfeld1.php">Kantonsschule Baden</a></th>
           <td class="anzahlspieler"><?php echo $anzBaden ?></td>
         </tr>
         <tr class="burghalde">
-          <th scope="row">4.<a class="links" href="/HTML, CSS Documents/spielfeld5.php">Schulhaus Burghalde</a></th>
+          <th scope="row">4.<a class="links" href="spielfeld5.php">Schulhaus Burghalde</a></th>
           <td class="anzahlspieler"><?php echo $anzBurghalde ?></td>
         </tr>
         <tr class="dättwil">
-          <th scope="row">5.<a class="links" href="/spielfeld2.php">Autobahnbrücke Dättwil</a></th>
+          <th scope="row">5.<a class="links" href="spielfeld2.php">Autobahnbrücke Dättwil</a></th>
           <td class="anzahlspieler"><?php echo $anzDättwil ?></td>
         </tr>
 

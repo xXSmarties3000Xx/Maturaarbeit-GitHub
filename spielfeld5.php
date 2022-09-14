@@ -87,7 +87,7 @@ session_start();
       <p>Anwesende Spieler:</p>
       <?php
       // display player on field
-      $sql = "SELECT * FROM users WHERE place='Wettingen';";
+      $sql = "SELECT * FROM users WHERE place='Burghalde';";
       $rs = mysqli_query($conn, $sql);
       $rsCheck = mysqli_num_rows($rs);
 
@@ -99,7 +99,7 @@ session_start();
 
 
       // count players on field
-      $query = "SELECT id FROM users WHERE place='Wettingen';";
+      $query = "SELECT id FROM users WHERE place='Burghalde';";
       $query_run = mysqli_query($conn, $query);
 
       $row2 = mysqli_num_rows($query_run);
