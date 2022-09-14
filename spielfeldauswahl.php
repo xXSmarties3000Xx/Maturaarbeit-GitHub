@@ -29,9 +29,6 @@ session_start();
   $visits += 1;
   $_SESSION['visits'] = $visits;
   $visitssession = $_SESSION['visits'];
-  echo "$visitssession";
-
-
 
 
   if ($visitssession == 1) {

@@ -85,7 +85,7 @@ session_start();
 
         <div class="kästchen">
           <div class="mb-3 form-check">
-            <input class="form-check-input" type="radio" name="playingtime" value="30" id="30mins">
+            <input class="form-check-input" type="radio" name="playingtime" value="30" id="30mins" checked>
             <label class="form-check-label" for="30mins">30 minuten</label>
           </div>
 
