@@ -87,7 +87,7 @@ session_start();
       </div>
 
       <div class="Bild1">
-        <img src="/HTML, CSS Documents/images/Baden.jpeg" alt="none" width="100%" height="100%">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/Baden.jpeg" alt="none" width="100%" height="100%">
       </div>
       <form action="spielfeld1.php" method="POST">
         <div class="btn-container">
@@ -108,7 +108,7 @@ session_start();
       </div>
 
       <div class="Bild2">
-        <img src="/HTML, CSS Documents/images/Dättwil.jpeg" alt="none" width="100%" height="100%">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/D%c3%a4ttwil.jpeg" alt="none" width="100%" height="100%">
       </div>
       <form action="spielfeld2.php" method="POST">
         <div class="btn-container">
@@ -128,7 +128,7 @@ session_start();
       </div>
 
       <div class="Bild3">
-        <img src="/HTML, CSS Documents/images/Nussbaumen.jpeg" alt="none" width="100%" height="100%">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/Nussbaumen.jpeg" alt="none" width="100%" height="100%">
       </div>
       <form action="spielfeld3.php" method="POST">
         <div class="btn-container">
@@ -148,7 +148,7 @@ session_start();
       </div>
 
       <div class="Bild4">
-        <img src="/HTML, CSS Documents/images/KantiWettingen.jpeg" alt="none" width="100%" height="100%">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/KantiWettingen.jpeg" alt="none" width="100%" height="100%">
       </div>
       <form action="spielfeld4.php" method="POST">
         <div class="btn-container">
@@ -168,7 +168,7 @@ session_start();
       </div>
 
       <div class="Bild5">
-        <img src="file:///C:/xampp/htdocs/bballconnect/Maturaarbeit-GitHub/img/burghalde.jpeg" alt="none" width="100%" height="100%">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/burghalde.jpeg" alt="none" width="100%" height="100%">
       </div>
       <form action="spielfeld5.php" method="POST">
         <div class="btn-container">

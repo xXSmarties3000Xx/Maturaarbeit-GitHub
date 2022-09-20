@@ -81,7 +81,7 @@ session_start();
 
 
     <div class="image">
-      <img src="/HTML, CSS Documents/images/Baden.jpeg" alt="none" width="100%">
+      <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/Baden.jpeg" alt="none" width="100%">
     </div>
 
     <ul class="spielerliste">

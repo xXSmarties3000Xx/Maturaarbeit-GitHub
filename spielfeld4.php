@@ -80,10 +80,10 @@ session_start();
 
 
     <div class="image">
-      <img src="/HTML, CSS Documents/images/KantiWettingen.jpeg" alt="none" width="100%"">
-      </div>
+      <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/KantiWettingen.jpeg" alt="none" width="100%">
+    </div>
 
-      <ul class=" spielerliste">
+    <ul class=" spielerliste">
       <p>Anwesende Spieler:</p>
       <?php
       // display player on field
@@ -105,16 +105,16 @@ session_start();
       $row2 = mysqli_num_rows($query_run);
 
       ?>
-      </ul>
+    </ul>
 
-      <div class="btn-container">
-        <button class="Button1" onclick="goback()">Anderes Spielfeld wählen
-          <button class="Button2" onclick="Karte()">Zur Übersicht
-      </div>
+    <div class="btn-container">
+      <button class="Button1" onclick="goback()">Anderes Spielfeld wählen
+        <button class="Button2" onclick="Karte()">Zur Übersicht
+    </div>
 
-      <footer>
-        © May 2022 By Nico and Emanuel
-      </footer>
+    <footer>
+      © May 2022 By Nico and Emanuel
+    </footer>
 
   </body>
 </div>

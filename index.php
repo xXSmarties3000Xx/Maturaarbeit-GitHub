@@ -121,7 +121,7 @@ session_start();
 
 
     <div class="image">
-      <img src="/img/hoop.jpg" alt="Something went wrong with the picture">
+      <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/hoop.jpg" alt="Something went wrong with the picture">
     </div>
 
     <footer>

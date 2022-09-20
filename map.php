@@ -61,13 +61,13 @@
     </div>
 
     <div class="karte">
-      <img src="/img/KarteBaden2.png" width="100%" alt="Map">
+      <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/MapBaden.png" width="100%" alt="Map">
       <div class="standorte">
-        <img src="/HTML, CSS Documents/images/pin.png" class="pin1">
-        <img src="/HTML, CSS Documents/images/pin.png" class="pin2">
-        <img src="/HTML, CSS Documents/images/pin.png" class="pin3">
-        <img src="/HTML, CSS Documents/images/pin.png" class="pin4">
-        <img src="/HTML, CSS Documents/images/pin.png" class="pin5">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/pin.png" class="pin2">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/pin.png" class="pin3">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/pin.png" class="pin4">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/pin.png" class="pin5">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/pin.png" class="pin1">
       </div>
 
       <div class="nummern">
