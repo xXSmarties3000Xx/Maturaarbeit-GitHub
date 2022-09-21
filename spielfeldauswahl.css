@@ -10,22 +10,6 @@
   max-height: 2800px;
 }
 
-.leftsidebar {
-  position: absolute;
-  top: 140px;
-  width: 10%;
-  height: inherit;
-  background-color: #dfe1fa;
-}
-
-.rightsidebar {
-  position: absolute;
-  top: 140px;
-  width: 10%;
-  height: inherit;
-  background-color: #dfe1fa;
-  left: 90%;
-}
 header {
   background-color: rgb(124, 135, 230);
   height: 60px;
@@ -55,6 +39,22 @@ header {
   background-color: white;
 }
 
+.leftsidebar {
+  position: absolute;
+  top: 140px;
+  width: 10%;
+  height: 126%;
+  background-color: #dfe1fa;
+}
+
+.rightsidebar {
+  position: absolute;
+  top: 140px;
+  width: 10%;
+  height: 126%;
+  background-color: #dfe1fa;
+  left: 90%;
+}
 .topcosmetic {
   position: relative;
   height: 40px;
@@ -350,14 +350,20 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  #wrapper {
+  .leftsidebar {
+    height: 115%;
+  }
+  .rightsidebar {
     height: 115%;
   }
 }
 
 @media only screen and (min-width: 1080px) {
-  #wrapper {
-    height: 150%;
+  .leftsidebar {
+    height: 182%;
+  }
+  .rightsidebar {
+    height: 182%;
   }
   .Titel1,
   .Titel2,

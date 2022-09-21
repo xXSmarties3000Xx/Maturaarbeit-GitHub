@@ -51,8 +51,7 @@ session_start();
     </header>
 
 
-    <div class="leftsidebar"></div>
-    <div class="rightsidebar"></div>
+
 
 
 
@@ -73,13 +72,9 @@ session_start();
 
 
 
-
     <div class="topcosmetic"></div>
-
-
-
-
-
+    <div class="leftsidebar"></div>
+    <div class="rightsidebar"></div>
     <div class="Spielfeld1">
 
       <div class="Titel1">
@@ -185,13 +180,15 @@ session_start();
 
 
 
-
-
-
-
     <footer>
       © May 2022 By Nico and Emanuel
     </footer>
+
+
+
+
+
+
 
 
 

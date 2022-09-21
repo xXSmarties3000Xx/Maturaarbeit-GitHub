@@ -64,7 +64,9 @@ session_start();
 
     </header>
 
-
+    <div class="image">
+      <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/hoop.jpg" width="50%" alt="Something went wrong with the picture">
+    </div>
 
     <div class="instructions">
       <h1>Willkommen bei B-Ball Connect!</h1>
@@ -120,9 +122,7 @@ session_start();
 
 
 
-    <div class="image">
-      <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/hoop.jpg" alt="Something went wrong with the picture">
-    </div>
+
 
     <footer>
       © May 2022 By Nico and Emanuel

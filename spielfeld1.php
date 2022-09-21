@@ -41,6 +41,10 @@ session_start();
     ?>
     <header>
 
+      <div class="image">
+        <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/Baden.jpeg" alt="none" width="100%">
+      </div>
+
       <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
 
@@ -80,9 +84,7 @@ session_start();
     </div>
 
 
-    <div class="image">
-      <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/Baden.jpeg" alt="none" width="100%">
-    </div>
+
 
     <ul class="spielerliste">
       <p>Anwesende Spieler:</p>
