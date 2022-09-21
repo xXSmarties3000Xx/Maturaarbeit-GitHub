@@ -131,10 +131,25 @@ th {
   margin-left: 5px;
 }
 
+footer {
+  display: none;
+  position: relative;
+  height: 50px;
+  clear: both;
+  background-color: rgba(57, 63, 68, 1);
+  text-align: center;
+  color: white;
+  line-height: 3em;
+}
+
 @media only screen and (min-width: 768px) {
   .karte {
     width: 50%;
     left: 50%;
+  }
+
+  footer {
+    display: block;
   }
 
   .nummern {
@@ -147,14 +162,15 @@ th {
 
   .listdescription {
     width: 50%;
-    top: -576px;
     left: 0%;
+    top: -640px;
     background-color: none;
     font-size: large;
   }
 
   table {
     max-width: 50%;
+    top: -606px;
   }
 
   th {
