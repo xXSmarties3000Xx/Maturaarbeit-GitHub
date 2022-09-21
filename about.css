@@ -38,6 +38,11 @@ header {
   background-color: #dfe1fa;
 }
 
+img {
+  position: relative;
+  width: 50%;
+}
+
 .secondparagraph {
   margin-top: 50px;
 }
@@ -62,10 +67,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  img {
-    width: 30%;
-  }
-
   .aboutus p {
     font-size: 25px;
   }
