@@ -40,7 +40,8 @@ header {
 
 img {
   position: relative;
-  width: 50%;
+  width: 40%;
+  float: right;
 }
 
 .secondparagraph {
@@ -67,6 +68,9 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  img {
+    width: 30%;
+  }
   .aboutus p {
     font-size: 25px;
   }
