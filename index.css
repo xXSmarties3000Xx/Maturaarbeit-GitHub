@@ -73,6 +73,7 @@ footer {
   position: absolute;
   display: none;
   right: -50%;
+  top: 20%;
 }
 
 .submitbutton {

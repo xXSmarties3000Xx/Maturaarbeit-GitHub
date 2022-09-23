@@ -34,6 +34,7 @@ session_start();
   if ($visitssession == 1) {
     $name = $_POST['name'];
     $playingtime = $_POST['playingtime'];
+
     $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`) VALUES ('0', '$name', '$playingtime')";
     $rs = mysqli_query($conn, $sql);
     $_SESSION['nameofplayer'] = $name;
