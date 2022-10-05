@@ -28,6 +28,7 @@ session_start();
 
     <?php
     include_once 'additional/connect.php';
+    include_once 'additional/deleteevent.php';
     $place = $_POST['place'];
     $nameofplayer = $_SESSION['nameofplayer'];
 
