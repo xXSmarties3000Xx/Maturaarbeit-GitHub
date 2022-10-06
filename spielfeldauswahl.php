@@ -34,6 +34,17 @@ session_start();
   if ($visitssession == 1) {
     $name = $_POST['name'];
     $playingtime = $_POST['playingtime'];
+    if (isset($_POST) & !empty($_POST)) {
+
+      $sql = "SELECT * FROM users WHERE name = '$name'";
+      $result = mysqli_query($conn, $sql);
+      $count = mysqli_num_rows($result);
+      if ($count > 0) {
+        // already logged in, show overview
+        header("Location: http://localhost/bballconnect/Maturaarbeit-GitHub/loggedin.php");
+        die();
+      }
+    }
 
     $sql = "INSERT INTO `users` (`Id`, `name`, `playingtime`) VALUES ('0', '$name', '$playingtime')";
     $rs = mysqli_query($conn, $sql);

@@ -134,10 +134,6 @@ session_start();
 
 
 <script>
-  document.getElementById("myButton").onclick = function() {
-    location.href = "spielfeldauswahl.php";
-  };
-
   const name = document.getElementById('name')
   form.addEventListener('submit')(e) => {
     let messages = []
