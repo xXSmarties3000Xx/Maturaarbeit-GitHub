@@ -77,11 +77,10 @@ header {
 }
 
 footer {
-  position: relative;
-  top: 200px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   height: 50px;
-  margin-left: 0px;
-  margin-right: 0px;
   clear: both;
   background-color: rgba(57, 63, 68, 1);
   text-align: center;

@@ -32,8 +32,10 @@ session_start();
 
 
   if ($visitssession == 1) {
-    $name = $_POST['name'];
-    $playingtime = $_POST['playingtime'];
+    $_SESSION['name'] = $_POST['name'];
+    $name = $_SESSION['name'];
+    $_SESSION['playingtime'] = $_POST['playingtime'];
+    $playingtime = $_SESSION['playingtime'];
     if (isset($_POST) & !empty($_POST)) {
 
       $sql = "SELECT * FROM users WHERE name = '$name'";
