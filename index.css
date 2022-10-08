@@ -35,6 +35,12 @@ header {
   padding: 0px 30px 20px;
   font-size: 20px;
 }
+.image {
+  position: absolute;
+  display: none;
+  top: 20%;
+  text-align: right;
+}
 
 .inputs {
   margin-left: 30px;
@@ -68,13 +74,6 @@ footer {
   text-align: center;
   color: white;
   line-height: 3em;
-}
-
-.image {
-  position: absolute;
-  display: none;
-  right: -50%;
-  top: 20%;
 }
 
 .submitbutton {
