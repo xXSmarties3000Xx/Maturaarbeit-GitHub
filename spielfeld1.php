@@ -29,7 +29,12 @@ session_start();
     <?php
     include_once 'additional/connect.php';
     include_once 'additional/deleteevent.php';
-    $place = $_POST['place'];
+    $mapvisited = $_SESSION['mapvisited'];
+    if ($mapvisited == "no") {
+      $_SESSION['place'] = $_POST['place'];
+    }
+
+    $place = $_SESSION['place'];
     $nameofplayer = $_SESSION['nameofplayer'];
 
     $sql = "UPDATE users

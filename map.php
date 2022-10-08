@@ -92,6 +92,8 @@
       </thead>
       <?php
       include_once 'additional/connect.php';
+      session_start();
+      $_SESSION['mapvisited'] = "yes";
 
       // count players on field Baden
       $query = "SELECT id FROM users WHERE place='Baden';";
