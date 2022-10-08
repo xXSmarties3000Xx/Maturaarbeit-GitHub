@@ -3,15 +3,25 @@
   padding: 0;
 }
 
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
 header {
-  background-color: rgb(124, 135, 230);
-  height: 120px;
+  position: relative;
+}
+
+.container-fluid {
+  font-size: 20px;
 }
 
 .logo {
   position: relative;
   text-align: center;
   font-size: 35px;
+  background-color: rgb(124, 135, 230);
+  height: 60px;
 }
 
 .container-fluid {
