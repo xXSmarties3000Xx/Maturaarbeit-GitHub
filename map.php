@@ -61,7 +61,7 @@
     </div>
 
     <div class="karte">
-      <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/MapBaden.png" width="100%" alt="Map">
+      <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/KarteBaden2.png" width="100%" alt="Map">
       <div class="standorte">
         <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/pin.png" class="pin2">
         <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/pin.png" class="pin3">
