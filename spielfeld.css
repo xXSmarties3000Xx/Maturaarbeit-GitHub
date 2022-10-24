@@ -77,8 +77,8 @@ header {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  top: 430px;
   width: 100%;
   height: 50px;
   clear: both;
@@ -113,6 +113,6 @@ footer {
   }
 
   footer {
-    top: 285px;
+    top: 125px;
   }
 }
