@@ -59,7 +59,7 @@ session_start();
       </nav>
 
       <div class="logo">
-        <p>B-Ball Connect</p>
+        <img id="logo" src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/logoschrift.png" alt="basketballlogo">
       </div>
 
     </header>
@@ -108,9 +108,9 @@ session_start();
             <button id="myButton" type="submit" class="btn btn-primary">Senden</button>
           </div>
         </div>
-        <div class="image">
-          <img src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/hoop.jpg" width="50%" alt="Something went wrong with the picture">
-        </div>
+
+        <img id="hoop" src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/hoop.jpg" width="50%" alt="Something went wrong with the picture">
+
       </form>
     </div>
 
