@@ -47,7 +47,7 @@
     </nav>
 
     <div class="logo">
-      <p>B-Ball Connect</p>
+      <img id="logo" src="http://localhost/bballconnect/Maturaarbeit-GitHub/img/logoschrift.png" alt="basketballlogo">
     </div>
 
   </header>

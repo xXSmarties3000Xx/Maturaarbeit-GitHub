@@ -19,6 +19,17 @@ header {
   height: 60px;
 }
 
+#logo {
+  position: absolute;
+  width: 100px;
+  top: -40px;
+  left: 34%;
+}
+
+#bball {
+  margin-left: 27%;
+}
+
 .title {
   text-align: center;
   margin-top: 20px;
@@ -55,7 +66,7 @@ header {
 .Button2 {
   position: relative;
   top: 60px;
-  transform: translate(-50%);
+  transform: translate(-60%);
 }
 
 .Button1,
@@ -103,16 +114,22 @@ footer {
   }
 
   .Button1 {
-    left: 11%;
+    left: 10%;
     top: -75px;
   }
 
   .Button2 {
-    left: 23%;
+    left: 27%;
     top: -75px;
   }
 
   footer {
     top: 311px;
+  }
+
+  #logo {
+    width: 121px;
+    top: -50px;
+    left: 46.5%;
   }
 }

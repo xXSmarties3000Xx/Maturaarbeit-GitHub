@@ -42,10 +42,6 @@ header {
   font-size: 20px;
 }
 
-#bball {
-  margin-left: 27%;
-}
-
 #hoop {
   position: absolute;
   display: none;
@@ -112,10 +108,9 @@ button#myButton {
   footer {
     top: 350px;
   }
-}
-
-#logo {
-  width: 121px;
-  top: -50px;
-  left: 44%;
+  #logo {
+    width: 121px;
+    top: -50px;
+    left: 46.5%;
+  }
 }

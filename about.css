@@ -24,6 +24,13 @@ header {
   height: 60px;
 }
 
+#logo {
+  position: absolute;
+  width: 100px;
+  top: -40px;
+  left: 34%;
+}
+
 .container-fluid {
   font-size: 20px;
 }
@@ -84,5 +91,11 @@ footer {
   }
   .aboutus p {
     font-size: 25px;
+  }
+
+  #logo {
+    width: 121px;
+    top: -50px;
+    left: 46.5%;
   }
 }

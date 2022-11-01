@@ -24,6 +24,13 @@ header {
   height: 60px;
 }
 
+#logo {
+  position: absolute;
+  width: 100px;
+  top: -40px;
+  left: 34%;
+}
+
 .description {
   position: relative;
   width: 100%;
@@ -168,5 +175,11 @@ th {
 
   th {
     font-size: medium;
+  }
+
+  #logo {
+    width: 121px;
+    top: -50px;
+    left: 46.5%;
   }
 }
