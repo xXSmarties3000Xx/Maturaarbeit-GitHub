@@ -101,7 +101,7 @@ button#myButton {
 }
 
 @media only screen and (min-width: 768px) {
-  img {
+  #hoop {
     display: block;
   }
 
@@ -112,4 +112,10 @@ button#myButton {
   footer {
     top: 350px;
   }
+}
+
+#logo {
+  width: 121px;
+  top: -50px;
+  left: 44%;
 }
